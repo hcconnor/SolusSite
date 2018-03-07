@@ -5,26 +5,37 @@ body {
   font-family: 'Playfair Display', serif;
   color: #fff;
   width: 100%;
+  height: 100%;
   font-size: 2.5em;
 }
 
 #hero {
-  height: 800px;
+  height: 1200px;
   overflow: hidden;
   position: relative;
+  width: 100%;
   
 }
 
 #content {
+  padding-top: 50px;
   background-color: #130d0a;
 }
+
+#container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #130d0a;
+  
+}
+
 
 .layer {
   background-position: bottom center;
   background-size: auto;
   background-repeat: no-repeat;
   width: 100%;
-  height: 800px;
+  height: 1200px;
   position: fixed;
   z-index: -1;
   padding: 0;
@@ -33,7 +44,7 @@ body {
 
 #hero-mobile {
   display: none;
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/full_illustration.png") no-repeat center bottom/cover;
+  background: url("../assets/hero_static.png");
   height: 320px;
 }
 
@@ -45,11 +56,13 @@ body {
 h1 {
   line-height: 120%;
   margin-bottom: 30px;
+  font-family: 'Krona One', sans-serif;
+  font-size: 1.5em;
 }
 
 p {
   color: #ede0d5;
-  font-size: 18px;
+  font-size: 0.8em;
   line-height: 150%;
 }
 
@@ -58,39 +71,41 @@ p {
 }
 
 
-#hero, .layer {
-  min-height: 800px;
-}
-
 .layer-bg {
-  background-image: url("../assets/ilu_bg.jpg");
-  
+  background-image: url("../assets/layer_1.png");
+  background-size: cover;
+    
 }
 
 .layer-1 {
-  background-image: url("../assets/ilu_03.png");
-  background-position: left bottom;
+  background-image: url("../assets/layer_2.png");
+  background-size: cover;
 }
 
 .layer-2 {
-  background-image: url("../assets/ilu_02.png");
+  background-image: url("../assets/layer_3.png");
+  background-size: cover;
+  
+}
+.layer-logo {
+  background-image: url("../assets/logo.png");
+  background-size: cover;
   
 }
 
 .layer-3 {
-  background-image: url("../assets/ilu_man.png");
-  background-position: right bottom;
+  background-image: url("../assets/layer_4.png");
+  background-size: cover;
 }
 
 .layer-4 {
-  background-image: url("../assets/ilu_01.png");
+  background-image: url("../assets/gif-layer_cut_MidQ.gif");
+  background-size: cover;
+  
   
 }
 
-.layer-overlay {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_overlay.png\a 		");
-  
-}
+
 
 @media only screen and (max-width: 768px) {
   #hero {
