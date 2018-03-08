@@ -99,12 +99,50 @@ p {
 }
 
 .layer-4 {
-  background-image: url("../assets/gif-layer_cut_MidQ.gif");
-  background-size: cover;
-  
-  
+  width: 1526px;
+  height: 780px;
+  background-image: url("../assets/sprite_layer.png");
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: solid 1px black;
+  -webkit-animation: playv 3.6s steps(2) infinite, playh 0.3s steps(12) infinite;
+  animation: playv 3.6s steps(2) infinite, playh 0.3s steps(12) infinite;
 }
 
+@-webkit-keyframes playv {
+  0% {
+    background-position-y: -40px;
+  }
+  100% {
+    background-position-y: -1600px;
+  }
+}
+
+@-webkit-keyframes playh {
+  0% {background-position-x: 0px;}
+  100% {background-position-x: -18312px;}
+}
+
+@keyframes playv {
+  0% {
+    background-position-y: -40px;
+  }
+  100% {
+    background-position-y: -1600px;
+  }
+}
+
+@keyframes playh {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: -18312px;
+  }
+}
 
 
 @media only screen and (max-width: 768px) {
