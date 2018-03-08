@@ -18,7 +18,7 @@ body {
 }
 
 .team-icons {
-  padding-top: 50px;;
+  padding-top: 5%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -101,6 +101,22 @@ p {
   font-family: sans-serif;
 }
 
+
+.glow {
+    border: 5px solid #6a3f75;
+    float: left;
+    margin: 15px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;
+}
+
+.glow:hover {
+  margin-top: 2px;
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+}
 #hero, .layer {
   min-height: 800px;
 }
