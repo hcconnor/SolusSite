@@ -20,12 +20,60 @@
 }).call(this);
 
 
-var icons = document.getElementsByClassName('t-icons');
+function oniconclick(clicked_thing) {
+  document.getElementById('team-text').innerHTML = getTeamFeat(clicked_thing);
+}
 
-for (var i = 0; i < icons.length; i++) {
-  icons[i].onclick = function() {
-    var textblock = document.getElementById('t-descript');
-    textblock.innerHTML= "some facts about this team member";
-    textblock.style.display = "block";
+function getTeamFeat(name) {
+  var string = "";
+  switch(name) {
+    case 'reshma':
+      string = "<h2>Reshma Zachariah</h2><p>some text</p>"
+      break;
+    case 'hamilton':
+      string = "<h2>Hamilton Connor</h2><p>some text</p>"
+      break;
+    case 'nichole':
+      string = "<h2>Nichole Lasater</h2><p>some text </p>"
+      break;
+    case 'alex':
+      string = "<h2>Alex Mao</h2><p>some text</p>"
+      break;
+    case 'jacob':
+      string = "<h2>Jacob Le</h2><p>some text</p>"
+      break;
+    case 'ed':
+      string = "<h2>Ed Martin Cruz</h2><p>some text</p>"
+      break;
+    case 'paul':
+      string = "<h2>Paul Odion</h2><p>some text</p>"
+      break;
+    case 'kim':
+      string = "<h2>Kimberly Oba</h2><p>some text</p>"
+      break;
+    case 'yui':
+      string = "<h2>Yui Sia</h2><p>some text </p>"
+      break;
+    case 'harp':
+      string = "<h2>Harpreet Mahli</h2><p>Designated snack thief.</p>"
+      break;
+    case 'k':
+      string = "<h2>K Connor</h2><p>some text</p>"
+      break;
+    case 'ian':
+      string = "<h2>Ian Carlton</h2><p>some text</p>"
+      break;
+    case 'javier':
+      string = "<h2>Javier Juanillo</h2><p>some text</p>"
+      break;
+    case 'phil':
+      string = "<h2>Phil Zajik</h2><p>some text</p>"
+      break;
+    case 'joel':
+      string = "<h2>Joel Reynada</h2><p>some text </p>"
+      break;
+    default:
+      string = "<p>We are a group of dedicated developers, artists, and musicians who are passionate about games.</p>"
   }
+  return string;
 }
