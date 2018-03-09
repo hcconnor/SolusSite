@@ -23,9 +23,9 @@
 var icons = document.getElementsByClassName('t-icons');
 
 for (var i = 0; i < icons.length; i++) {
-  i.addEventListener('onclick', function(event) {
+  icons[i].onclick = function() {
     var textblock = document.getElementById('t-descript');
     textblock.innerHTML= "some facts about this team member";
     textblock.style.display = "block";
-  });
+  }
 }
