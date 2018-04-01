@@ -14,11 +14,11 @@ body {
   overflow: hidden;
   position: relative;
   width: 100%;
-  
+
 }
 
 .team-icons {
-  padding-top: 5%;
+  padding-top: 10%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -30,10 +30,32 @@ body {
   padding-right: 15%;
   padding-top: 10%;
   padding-bottom: 10%;
+  overflow: hidden;
 }
 
 .void {
-  background-color: #19151A;
+  background-color: #190012;
+}
+.void1 {
+    background-color: #190012;
+    height: 50%;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    overflow: hidden;
+}
+
+.void2 {
+    background-color: #190012;
+    height: 50%;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    overflow: hidden;
 }
 
 .olive {
@@ -41,26 +63,90 @@ body {
 }
 
 .plum {
-  background-color: #693E4A;
+  background-color: #281d25;
+  height: 50%;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  overflow: hidden;
+}
+
+.group-logo {
+}
+
+
+.giant-image-slider {
+
+}.slide1,.slide2,.slide3,.slide4,.slide5 {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+}
+.slide1 {
+  background: url(http://cdn.akc.org/content/article-body-image/shiba_inu_cute_puppies.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade 8s infinite;
+-webkit-animation:fade 8s infinite;
+
+}
+.slide2 {
+  background: url(https://i.ytimg.com/vi/Ce7hJ24a8yM/maxresdefault.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade2 8s infinite;
+-webkit-animation:fade2 8s infinite;
+}
+.slide3 {
+    background: url(https://i.pinimg.com/736x/95/2a/04/952a04ea85a8d1b0134516c52198745e--rottweilers-labradors.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade3 8s infinite;
+-webkit-animation:fade3 8s infinite;
+}
+@keyframes fade
+{
+  0%   {opacity:1}
+  33.333% { opacity: 0}
+  66.666% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+  0%   {opacity:0}
+  33.333% { opacity: 1}
+  66.666% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fade3
+{
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
+}
+
+
+.desc-text{
+  text-align: right;
+
 }
 
 .feature-text {
   padding-top: 5%;
-  color: #6A3F75;
   vertical-align: middle;
   text-align: center;
 }
 .bitbigger {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
-.centered { 
+.centered {
   vertical-align: middle;
   text-align: center;
 }
 
 .circular-square {
-  border-radius: 50%;
+  border-radius: 0%;
 }
 
 
@@ -103,9 +189,9 @@ p {
 
 
 .glow {
-    border: 5px solid #6a3f75;
+    border: 5px solid #281d25;
     float: left;
-    margin: 15px;
+    margin: 60px;
     -webkit-transition: margin 0.5s ease-out;
     -moz-transition: margin 0.5s ease-out;
     -o-transition: margin 0.5s ease-out;
@@ -113,7 +199,7 @@ p {
 
 .glow:hover {
   margin-top: 2px;
-  -webkit-transform: rotate(-10deg);
+  -webkit-transform: rotate(-0deg);
   -moz-transform: rotate(-10deg);
   -o-transform: rotate(-10deg);
 }
@@ -125,7 +211,7 @@ p {
 .layer-bg {
   background-image: url("../assets/layer_1.png");
   background-size: cover;
-    
+
 }
 
 .layer-1 {
@@ -136,12 +222,12 @@ p {
 .layer-2 {
   background-image: url("../assets/layer_3.png");
   background-size: cover;
-  
+
 }
 .layer-logo {
   background-image: url("../assets/logo.png");
   background-size: cover;
-  
+
 }
 
 .layer-3 {
@@ -164,4 +250,3 @@ p {
   #hero-mobile {
     display: block;
   }
-
