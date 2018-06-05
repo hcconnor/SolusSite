@@ -125,7 +125,7 @@ p {
 
 .layer-bg {
   background-image: url("../assets/layer_1.png");
-  background-size: 100%;
+  background-size: cover;
     
 }
 
