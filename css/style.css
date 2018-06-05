@@ -21,6 +21,7 @@ body {
   padding-top: 5%;
   margin-left: auto;
   margin-right: auto;
+  position: absolute;
 }
 
 .container {
@@ -118,40 +119,40 @@ p {
   -o-transform: rotate(-10deg);
 }
 #hero, .layer {
-  min-height: 800px;
+  min-height: 1200px;
 }
 
 
 .layer-bg {
   background-image: url("../assets/layer_1.png");
-  background-size: cover;
+  background-size: 100%;
     
 }
 
 .layer-1 {
-  background-image: url("../assets/layer_2.png");
-  background-size: cover;
+  background-image: url("../assets/layer_2.png"); 
+  background-size: 100%;
 }
 
 .layer-2 {
   background-image: url("../assets/layer_3.png");
-  background-size: cover;
+  background-size: 100%;
   
 }
 .layer-logo {
   background-image: url("../assets/logo.png");
-  background-size: cover;
+  background-size: 100%;
   
 }
 
 .layer-3 {
   background-image: url("../assets/layer_4.png");
-  background-size: cover;
+  background-size: 100%;
 }
 
 .layer-4 {
-  background-image: url("../assets/gif-layer_cut_MidQ.gif");
-  background-size: cover;
+  background-image: url("../assets/gif_layer_MID.gif");
+  background-size: 100%;
 }
 
 
