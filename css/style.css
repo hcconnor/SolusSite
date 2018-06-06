@@ -18,9 +18,8 @@ body {
 }
 
 .team-icons {
-  padding-top: 5%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 5%;
+  margin-right: 5%;
   position: absolute;
 }
 
@@ -61,6 +60,19 @@ body {
   vertical-align: middle;
   text-align: center;
 }
+
+#team-feature {
+  margin-bottom: 10%;
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 425px;
+}
+
+#team-image {
+  border: 10px solid #021a40;
+}
+
 .bitbigger {
   font-size: 1.2em;
 }
@@ -71,6 +83,7 @@ body {
 }
 
 .circular-square {
+  width: 5%;
   border-radius: 50%;
   
 }
@@ -126,21 +139,6 @@ p {
 }
 
 
-.glow {
-    border: 5px solid #6a3f75;
-    float: left;
-    margin: 15px;
-    -webkit-transition: margin 0.5s ease-out;
-    -moz-transition: margin 0.5s ease-out;
-    -o-transition: margin 0.5s ease-out;
-}
-
-.glow:hover {
-  margin-top: 2px;
-  -webkit-transform: rotate(-10deg);
-  -moz-transform: rotate(-10deg);
-  -o-transform: rotate(-10deg);
-}
 #hero, .layer {
   min-height: 1200px;
 }

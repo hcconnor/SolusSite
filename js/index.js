@@ -22,6 +22,7 @@
 
 function oniconclick(clicked_thing) {
   document.getElementById('team-text').innerHTML = getTeamFeat(clicked_thing);
+  document.getElementById('team-image').src = getTeamImg(clicked_thing);
 }
 
 function getTeamFeat(name) {
@@ -36,8 +37,14 @@ function getTeamFeat(name) {
     case 'nichole':
       string = "<h2>Nichole Lasater</h2><p>some text </p>"
       break;
+    case 'duncan':
+      string = "<h2>Duncan Bauer</h2><p>some text </p>"
+      break;
     case 'alex':
       string = "<h2>Alex Mao</h2><p>some text</p>"
+      break;
+    case 'shawn':
+      string = "<h2>Shawn Edmond</h2><p>some text </p>"
       break;
     case 'jacob':
       string = "<h2>Jacob Le</h2><p>some text</p>"
@@ -74,6 +81,66 @@ function getTeamFeat(name) {
       break;
     default:
       string = "<p>We are a group of dedicated developers, artists, and musicians who are passionate about games.</p>"
+  }
+  return string;
+}
+
+function getTeamImg(name) {
+  var string = "";
+  switch(name) {
+    case 'reshma':
+      string = "assets/team/ReshmaZachariah.jpg"
+      break;
+    case 'hamilton':
+      string = "assets/team/placeholder.jpg"
+      break;
+    case 'nichole':
+      string = "assets/team/placeholder.jpg"
+      break;
+    case 'duncan':
+      string = "assets/team/placeholder.jpg"
+      break;
+    case 'alex':
+      string = "assets/team/placeholder.jpg"
+      break;
+    case 'shawn':
+      string = "assets/team/placeholder.jpg"
+      break;
+    case 'jacob':
+      string = "assets/team/placeholder.jpg"
+      break;
+    case 'ed':
+      string = "assets/team/placeholder.jpg"
+      break;
+    case 'paul':
+      string = "assets/team/placeholder.jpg"
+      break;
+    case 'kim':
+      string = "assets/team/placeholder.jpg"
+      break;
+    case 'yui':
+      string = "<h2>Yui Sia</h2><p>some text </p>"
+      break;
+    case 'harp':
+      string = "assets/team/placeholder.jpg"
+      break;
+    case 'k':
+      string = "assets/team/placeholder.jpg"
+      break;
+    case 'ian':
+      string = "assets/team/placeholder.jpg"
+      break;
+    case 'javier':
+      string = "assets/team/placeholder.jpg"
+      break;
+    case 'phil':
+      string = "assets/team/placeholder.jpg"
+      break;
+    case 'joel':
+      string = "assets/team/placeholder.jpg"
+      break;
+    default:
+      string = "assets/team/placeholder.jpg"
   }
   return string;
 }
