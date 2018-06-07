@@ -1,6 +1,5 @@
 body {
-  padding: 0;
-  margin: 0;
+  
   background-color: #000000;
   font-family: 'Playfair Display', serif;
   color: #fff;
@@ -79,13 +78,14 @@ body {
   margin-top: 10%;
   margin-left: 5%;
   margin-right: 5%;
-  height: 425px;
+  
 }
 
 
 
 #team-image {
   border: 10px solid #021a40;
+  width: 30%;
 }
 
 .bitbigger {
@@ -100,7 +100,6 @@ body {
 .circular-square {
   width: 5%;
   border-radius: 50%;
-  
 }
 
 .right40 {
@@ -109,6 +108,11 @@ body {
 
 .left40 {
   margin-right: 60%;
+}
+
+.right60 {
+  margin-right: 40%;
+  position: absolute;
 }
 
 .space {
@@ -132,6 +136,7 @@ body {
 
 .dlbutton{
   margin-top: -10%;
+  width: 100%;
   align-content: center;
   text-align: center;
 }
@@ -140,6 +145,8 @@ body {
   display: none;
   background: url("../assets/hero_static.png");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 320px;
 }
 
@@ -278,7 +285,29 @@ p {
     margin-left: 0px;
   }
   
+  .right60 {
+    margin-right: 0px;
+    position: inherit;
+  }
   .left40 {
     margin-right: 0px;
   }
-
+  #astronaut {
+    display: none;
+  }
+  
+  h1 {
+    font-size: 1.0em;
+  }
+  
+  p {
+    font-size: 0.4em;
+  }
+  
+  .giant-image-slider {
+    display: none;
+  }
+  
+  .circular-square {
+    width: 10%;
+  }
