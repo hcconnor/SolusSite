@@ -19,6 +19,18 @@
 
 }).call(this);
 
+var teamlist = ["alex", "ed", "jacob", "nichole", "duncan", "yui", "paul", "kim", "joel", "hamilton", "shawn", "ian", "javier", "k", "phil", "reshma"];
+var currname = 0;
+
+//window.setInterval(function(){
+//  document.getElementById('team-text').innerHTML = getTeamFeat(teamlist[currname]);
+//  document.getElementById('team-image').src = getTeamImg(teamlist[currname]);
+//  
+//  currname = currname + 1;
+//  if currname > teamlist.length {
+//    currname = 0;
+//  }
+//}, 10000);
 
 function oniconclick(clicked_thing) {
   document.getElementById('team-text').innerHTML = getTeamFeat(clicked_thing);
@@ -29,58 +41,58 @@ function getTeamFeat(name) {
   var string = "";
   switch(name) {
     case 'reshma':
-      string = "<h2>Reshma Zachariah</h2><p>some text</p>"
+      string = "<h3>Reshma Zachariah</h3><p>Concept and 2D Artist</p>"
       break;
     case 'hamilton':
-      string = "<h2>Hamilton Connor</h2><p>some text</p>"
+      string = "<h3>Hamilton Connor</h3><p>Sound Director, Artist Coordinator, Developer</p>"
       break;
     case 'nichole':
-      string = "<h2>Nichole Lasater</h2><p>some text </p>"
+      string = "<h3>Nichole Lasater</h3><p>Producer, Developer</p>"
       break;
     case 'duncan':
-      string = "<h2>Duncan Bauer</h2><p>some text </p>"
+      string = "<h3>Duncan Bauer</h3><p>UI Director, Developer</p>"
       break;
     case 'alex':
-      string = "<h2>Alex Mao</h2><p>some text</p>"
+      string = "<h3>Alex Mao</h3><p>Team Lead, Developer</p>"
       break;
     case 'shawn':
-      string = "<h2>Shawn Edmond</h2><p>some text </p>"
+      string = "<h3>Shawn Edmond</h3><p>Developer</p>"
       break;
     case 'jacob':
-      string = "<h2>Jacob Le</h2><p>some text</p>"
+      string = "<h3>Jacob Le</h3><p>Narrative Director, Developer</p>"
       break;
     case 'ed':
-      string = "<h2>Ed Martin Cruz</h2><p>some text</p>"
+      string = "<h3>Ed Martin Cruz</h3><p>Lead Developer</p>"
       break;
     case 'paul':
-      string = "<h2>Paul Odion</h2><p>some text</p>"
+      string = "<h3>Paul Odion</h3><p>Chief 3D Artist</p>"
       break;
     case 'kim':
-      string = "<h2>Kimberly Oba</h2><p>some text</p>"
+      string = "<h3>Kimberly Oba</h3><p>Artistic Director, Concept and 2D Artist</p>"
       break;
     case 'yui':
-      string = "<h2>Yui Sia</h2><p>some text </p>"
+      string = "<h3>Yui Sia</h3><p>Developer</p>"
       break;
     case 'harp':
-      string = "<h2>Harpreet Mahli</h2><p>Designated snack thief.</p>"
+      string = "<h3>Harpreet Mahli</h3><p>Designated Snack Thief.</p>"
       break;
     case 'k':
-      string = "<h2>K Connor</h2><p>some text</p>"
+      string = "<h3>K Connor</h3><p>Concept Artist</p>"
       break;
     case 'ian':
-      string = "<h2>Ian Carlton</h2><p>some text</p>"
+      string = "<h3>Ian Carlton</h3><p>Composer</p>"
       break;
     case 'javier':
-      string = "<h2>Javier Juanillo</h2><p>some text</p>"
+      string = "<h3>Javier Juanillo</h3><p>Film Artist, Writer</p>"
       break;
     case 'phil':
-      string = "<h2>Phil Zajik</h2><p>some text</p>"
+      string = "<h3>Phil Zajik</h3><p>Composer</p>"
       break;
     case 'joel':
-      string = "<h2>Joel Reynada</h2><p>some text </p>"
+      string = "<h3>Joel Reynada</h3><p>Writer, 3D Artist</p>"
       break;
     default:
-      string = "<p>We are a group of dedicated developers, artists, and musicians who are passionate about games.</p>"
+      string = "<h3>Alex Mao</h3><p>Team Lead, Developer</p>"
   }
   return string;
 }
@@ -92,55 +104,55 @@ function getTeamImg(name) {
       string = "assets/team/ReshmaZachariah.jpg"
       break;
     case 'hamilton':
-      string = "assets/team/placeholder.jpg"
+      string = "assets/team/hamilton.jpg"
       break;
     case 'nichole':
-      string = "assets/team/placeholder.jpg"
+      string = "assets/team/nichole.jpg"
       break;
     case 'duncan':
-      string = "assets/team/placeholder.jpg"
+      string = "assets/team/duncan.jpg"
       break;
     case 'alex':
-      string = "assets/team/placeholder.jpg"
+      string = "assets/team/alex.jpg"
       break;
     case 'shawn':
-      string = "assets/team/placeholder.jpg"
+      string = "assets/team/shawn.jpg"
       break;
     case 'jacob':
-      string = "assets/team/placeholder.jpg"
+      string = "assets/team/jacob.jpg"
       break;
     case 'ed':
-      string = "assets/team/placeholder.jpg"
+      string = "assets/team/ed.jpg"
       break;
     case 'paul':
-      string = "assets/team/placeholder.jpg"
+      string = "assets/team/paul.jpg"
       break;
     case 'kim':
-      string = "assets/team/placeholder.jpg"
+      string = "assets/team/kim.jpg"
       break;
     case 'yui':
-      string = "<h2>Yui Sia</h2><p>some text </p>"
+      string = "assets/team/yui.jpeg"
       break;
     case 'harp':
-      string = "assets/team/placeholder.jpg"
+      string = "assets/team/harp.jpg"
       break;
     case 'k':
-      string = "assets/team/placeholder.jpg"
+      string = "assets/team/k.jpg"
       break;
     case 'ian':
-      string = "assets/team/placeholder.jpg"
+      string = "assets/team/ian.jpg"
       break;
     case 'javier':
-      string = "assets/team/placeholder.jpg"
+      string = "assets/team/javier.jpg"
       break;
     case 'phil':
-      string = "assets/team/placeholder.jpg"
+      string = "assets/team/phil.jpg"
       break;
     case 'joel':
-      string = "assets/team/placeholder.jpg"
+      string = "assets/team/joel.jpg"
       break;
     default:
-      string = "assets/team/placeholder.jpg"
+      string = "assets/team/alex.jpg"
   }
   return string;
 }

@@ -74,8 +74,8 @@ body {
 }
 
 #team-feature {
+  height: 500px;
   margin-bottom: 10%;
-  margin-top: 10%;
   margin-left: 5%;
   margin-right: 5%;
   
@@ -85,7 +85,8 @@ body {
 
 #team-image {
   border: 10px solid #021a40;
-  width: 30%;
+  width: 40%;
+  margin: 5%;
 }
 
 .bitbigger {
@@ -99,7 +100,6 @@ body {
 
 .circular-square {
   width: 5%;
-  border-radius: 50%;
 }
 
 .right40 {
@@ -150,6 +150,13 @@ h1 {
   font-size: 2.0em;
 }
 
+
+h3 {
+  margin-bottom: 30px;
+  font-family: 'Krona One', sans-serif;
+  font-size: 0.80em;
+}
+
 p {
   color: #ede0d5;
   font-size: 0.8em;
@@ -163,6 +170,7 @@ p {
 }
 
 .footercell {
+  text-align: center;
   margin-left: 10%;
   margin-right: 10%
 }
@@ -307,6 +315,11 @@ p {
     font-size: 1.0em;
   }
   
+  h3 {
+    margin-bottom: 10px;
+    font-size: 0.3em;
+  }
+  
   p {
     font-size: 0.4em;
   }
@@ -317,4 +330,13 @@ p {
   
   .circular-square {
     width: 10%;
+  }
+  
+  #team-feature {
+    height: 200px;
+  }
+  
+  #team-image {
+    border: 3px solid #021a40;
+    max-height: 200px;
   }
